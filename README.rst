@@ -63,6 +63,7 @@ Software
 -  Arduino-1.8.3
 -  ESP8266/Arduino :Additional Boards Manager URL:
    http://arduino.esp8266.com/stable/package\_esp8266com\_index.json
+-  Arduino ESP8266 filesystem uploader https://github.com/esp8266/arduino-esp8266fs-plugin
 -  Time 1.5.0 https://github.com/PaulStoffregen/Time
 -  SimpleTimer https://github.com/jfturcot/SimpleTimer
    (http://playground.arduino.cc/Code/SimpleTimer)
@@ -144,6 +145,8 @@ changes to the contents of data-uncompressed, you don't need to do this step.
 
 Upload the contents of the data folder with MkSPIFFS Tool
 ("ESP8266 Sketch Data Upload" in Tools menu in Arduino IDE)
+
+Uncomment the line //#define INCLUDE_DS1307 as we are not using that type of rtc and don't have the library
 
 Then compile and upload the .ino.
 
